@@ -1,13 +1,9 @@
-﻿using Microsoft.Extensions.Configuration;
-using System.ComponentModel;
-using System.Data.SqlClient;
-using System.Runtime.CompilerServices;
+﻿using System.Data.SqlClient;
 using System.Windows;
 using System.Windows.Navigation;
 namespace WpfApp1;
 public partial class MainWindow : NavigationWindow
 {
-    private readonly IConfiguration _configuration;
     public static List<User> Users { get; set; } = new();
 
     public MainWindow()
